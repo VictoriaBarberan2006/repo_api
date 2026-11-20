@@ -7,7 +7,7 @@ try:
     datos = respuesta.json
     print("datos recibidos correctamente: ")
     print(datos)
-    
+
 except requests.exceptions.Timeout:
     print("La consulta demoró demasiado. Intente nuevamente más tarde.")
 except requests.exceptions.HTTPError:
